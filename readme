@@ -1,0 +1,19 @@
+程序的调用：
+    在key_extract.py中:
+    if __name__ == "__main__":
+        string = 'xxxxxxxxxxxxx'
+        main(string)
+
+py文件的介绍：
+    betweenness_centrality.py 计算词语语义相关度
+    candidate_words.py 过滤停用词，获取候选词
+    key_extract.py 主程序代码，获取关键词
+    semantic_similarity_network.py 构建语义相关度网络
+    ｓ
+txt文件的介绍：
+    stopwords.txt 停用词表（哈工大＋百度）
+    tag.txt 词性权重表
+    word_codes.txt 哈工大同义词林
+
+
+
