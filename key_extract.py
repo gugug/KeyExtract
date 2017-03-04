@@ -75,26 +75,30 @@ class Keyword:
         return keywords, key_score
 
 
-def main(string):
+def main_keyword(news_list):
+    string = ''
+    for i in news_list:
+        string += i
     keyword_list = Keyword().keyword(string)
     keywords = keyword_list[0]
     print '------------本程序的提取效果--------------'
     for key in keywords:
         print key,
-    print '\n'
-    print '------------结巴分词的提取效果--------------'
-    keyword_list = jieba.analyse.extract_tags(string)
-    for key in keyword_list:
-        print key,
-    print '\n'
+    # print '\n'
+    # print '------------结巴分词的提取效果--------------'
+    # jieba_list = jieba.analyse.extract_tags(string)
+    # for key in jieba_list:
+    #     print key,
+    # print '\n'
+    return keywords
 
 
-if __name__ == "__main__":
-    """string将所有的相关新闻拼合，然后进项关键词提取"""
-    string = '【中方谴责越南边检污损中国护照：无耻懦夫】'
-    string += '【中方要越南调查&quot;护照脏话&quot; 越方驱逐66名中国人】'
-    string += '【中方要越南调查&quot;护照脏话&quot; 越方驱逐66名中国人】'
-    main(string)
+# if __name__ == "__main__":
+#     """string将所有的相关新闻拼合，然后进项关键词提取"""
+#     string = '【中方谴责越南边检污损中国护照：无耻懦夫】'
+#     string += '【中方要越南调查&quot;护照脏话&quot; 越方驱逐66名中国人】'
+#     string += '【中方要越南调查&quot;护照脏话&quot; 越方驱逐66名中国人】'
+#     main_keyword(string)
 
 
 

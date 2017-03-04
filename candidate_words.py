@@ -1,4 +1,3 @@
-__author__ = 'kalin'
 # coding=utf-8
 import jieba.posseg as pseg      #words tagging
 import os
